@@ -1,9 +1,36 @@
+# Linear Regression
+
+## Theory
+
+
+
+## Practice
+
+<<<<<<< HEAD
+**5 steps** to realize a simple linear regression
+
+
+**Step 1** - Import necessary libraries
+=======
+X steps to realize a simple linear regression
+
+1. Import necessary libraries
+>>>>>>> 9f734a42bb47bb189166dc298cf64b1eb75de913
+
+```python
 from sklearn.datasets import load_diabetes
 from sklearn.utils import shuffle
 import numpy as np
 import matplotlib.pyplot as plt
+```
 
+<<<<<<< HEAD
+**Step 2** - Load an examplary dataset
+=======
+2. Load an examplary dataset
+>>>>>>> 9f734a42bb47bb189166dc298cf64b1eb75de913
 
+```python
 # load data from sklearn
 diabetes = load_diabetes()
 
@@ -12,7 +39,14 @@ data = diabetes.data
 
 # get label (diabete or not), shape (442,)
 labels = diabetes.target
+```
 
+<<<<<<< HEAD
+**Step 3** - Make train and test data
+=======
+3. Make train and test data
+>>>>>>> 9f734a42bb47bb189166dc298cf64b1eb75de913
+```python
 # shuffle data for splitting train/test set
 X, y = shuffle(data, labels, random_state=5)
 
@@ -27,6 +61,14 @@ X_test, y_test = X[split_index:], y[split_index:]
 # reshape label from (442,) to (442,1)
 y_train, y_test = y_train.reshape((-1, 1)), y_test.reshape((-1, 1))
 
+```
+
+<<<<<<< HEAD
+**Step 4** - Define forward and backward propagation
+=======
+4. Define forward and backward propagation
+>>>>>>> 9f734a42bb47bb189166dc298cf64b1eb75de913
+```python
 
 # define loss function of linear regression
 def calculate_loss(X, y, w, b):
@@ -97,6 +139,14 @@ def train(X, y, lr, epochs):
 
     return loss_list, loss, params, grads
 
+```
+
+<<<<<<< HEAD
+**Step 5** - Train the model and predict on test data
+=======
+5. Train the model and predict on test data
+>>>>>>> 9f734a42bb47bb189166dc298cf64b1eb75de913
+```python
 
 # fit data on linear regression model
 loss_list, loss, params, grads = train(X_train, y_train, 0.5, 50000)
@@ -115,23 +165,4 @@ def predict(X, params):
 
 y_predict = predict(X_test, params)
 
-
-# plot the results
-
-f = X_test.dot(params['w']) + params['b']
-
-plt.subplot(1,2,1)
-plt.scatter(range(X_test.shape[0]), y_test)
-plt.plot(f, color='darkorange')
-plt.title("Test Results")
-plt.xlabel('X')
-plt.ylabel('y')
-
-
-plt.subplot(1,2,2)
-plt.plot(loss_list, color='blue')
-plt.title("Loss")
-plt.xlabel('epochs')
-plt.ylabel('loss')
-
-plt.show()
+```
