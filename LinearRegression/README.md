@@ -6,10 +6,12 @@
 
 ## Practice
 
-**5 steps** to realize a simple linear regression
+5 steps to realize a simple linear regression
+
+***
 
 
-**Step 1** - Import necessary libraries
+Step 1 - Import necessary libraries
 
 ```python
 from sklearn.datasets import load_diabetes
@@ -18,7 +20,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 ```
 
-**Step 2** - Load an examplary dataset
+Step 2 - Load an examplary dataset
 
 ```python
 # load data from sklearn
@@ -31,7 +33,7 @@ data = diabetes.data
 labels = diabetes.target
 ```
 
-**Step 3** - Make train and test data
+Step 3 - Make train and test data
 
 ```python
 # shuffle data for splitting train/test set
@@ -50,7 +52,7 @@ y_train, y_test = y_train.reshape((-1, 1)), y_test.reshape((-1, 1))
 
 ```
 
-**Step 4** - Define forward and backward propagation
+Step 4 - Define forward and backward propagation
 
 ```python
 
@@ -125,7 +127,7 @@ def train(X, y, lr, epochs):
 
 ```
 
-**Step 5** - Train the model and predict on test data
+Step 5 - Train the model and predict on test data
 
 ```python
 
