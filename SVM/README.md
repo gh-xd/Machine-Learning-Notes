@@ -1,0 +1,3 @@
+# Support Vector Machine
+
+Support Vector is the vector that...
