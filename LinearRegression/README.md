@@ -3,7 +3,6 @@
 ## Theory
 
 
-
 ## Practice
 
 5 steps to realize a simple linear regression
