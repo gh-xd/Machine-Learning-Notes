@@ -6,16 +6,10 @@
 
 ## Practice
 
-<<<<<<< HEAD
 **5 steps** to realize a simple linear regression
 
 
 **Step 1** - Import necessary libraries
-=======
-X steps to realize a simple linear regression
-
-1. Import necessary libraries
->>>>>>> 9f734a42bb47bb189166dc298cf64b1eb75de913
 
 ```python
 from sklearn.datasets import load_diabetes
@@ -24,11 +18,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 ```
 
-<<<<<<< HEAD
 **Step 2** - Load an examplary dataset
-=======
-2. Load an examplary dataset
->>>>>>> 9f734a42bb47bb189166dc298cf64b1eb75de913
 
 ```python
 # load data from sklearn
@@ -41,11 +31,8 @@ data = diabetes.data
 labels = diabetes.target
 ```
 
-<<<<<<< HEAD
 **Step 3** - Make train and test data
-=======
-3. Make train and test data
->>>>>>> 9f734a42bb47bb189166dc298cf64b1eb75de913
+
 ```python
 # shuffle data for splitting train/test set
 X, y = shuffle(data, labels, random_state=5)
@@ -63,11 +50,8 @@ y_train, y_test = y_train.reshape((-1, 1)), y_test.reshape((-1, 1))
 
 ```
 
-<<<<<<< HEAD
 **Step 4** - Define forward and backward propagation
-=======
-4. Define forward and backward propagation
->>>>>>> 9f734a42bb47bb189166dc298cf64b1eb75de913
+
 ```python
 
 # define loss function of linear regression
@@ -141,11 +125,8 @@ def train(X, y, lr, epochs):
 
 ```
 
-<<<<<<< HEAD
 **Step 5** - Train the model and predict on test data
-=======
-5. Train the model and predict on test data
->>>>>>> 9f734a42bb47bb189166dc298cf64b1eb75de913
+
 ```python
 
 # fit data on linear regression model
