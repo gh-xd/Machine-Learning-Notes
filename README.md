@@ -5,9 +5,8 @@ Reason of this repository:
 - Learning classic machine learning algorithms
     - Theory parts
     - Hands-on coding where possible
-    - Applying sciki-learn where needed
+    - Applying sciki-learn/other libraries where needed
 - Clarification of general terms in machine learning
-
 
 
 References:
