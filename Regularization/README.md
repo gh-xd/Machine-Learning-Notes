@@ -12,7 +12,7 @@ Overfitting avoidance approaches:
 
 ---
 
-##### Ridge Regression (L2 Norm)
+### Ridge Regression (L2 Norm)
 
 
 Loss function = original Loss function + **penalty**
@@ -22,22 +22,22 @@ Loss function = original Loss function + **penalty**
 Ridge regression technique prevents **coefficients** from rising too high
 
 
-##### Lasso (L1 Norm)
+### Lasso (L1 Norm)
 Loss function = original Loss function + **penalty**
 
 **penalty** = tunning parameter and coefficient (modulus)
 
 
-##### Dropout
+### Dropout
 Dropout can suppress learning
 
 ---
 
-##### Summary
+### Summary
 Regularization reduces the *variance* of the model, without substantial increase in its bias
 
 
-#### Reference
+### References
 [Regularization in Machine Learning](https://towardsdatascience.com/regularization-in-machine-learning-76441ddcf99a)
 
 More regularization methods:
