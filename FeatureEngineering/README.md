@@ -17,8 +17,8 @@
 - 使用`df.isna().all(axis=0/1)`查看整列/整行缺失的情况
 - 使用`df.isna().any(axis=0/1)`查看某列/某行有缺失值的情况
 
-:white_check_mark:
-> **个人总结**：拿到数据可以先观察特征类型，数值型和类别型数据(categorical and numerical data)的处理方式和训练方法不一样。确认缺失行列/值所涉及的特征具体指的是什么，从而在预处理环节有针对性地对其进行处理。
+:white_check_mark: **个人总结**
+> 拿到数据可以先观察特征类型，数值型和类别型数据(categorical and numerical data)的处理方式和训练方法不一样。确认缺失行列/值所涉及的特征具体指的是什么，从而在预处理环节有针对性地对其进行处理。
 
 ## 2. Preprocessing 预处理 
 - sklearn.processing
